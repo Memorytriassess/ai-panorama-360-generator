@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Tooling
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Model weights & artifacts (never commit)
+models/checkpoints/*.safetensors
+models/checkpoints/*.ckpt
+models/loras/*.safetensors
+artifacts/renders/
+artifacts/tiles/
+artifacts/cache/
+*.pt
+*.pth
+*.onnx
+
+# Local config
+config/local.toml
+config/secrets.toml
+.env
+.env.*
+
+# Windows
+Thumbs.db
+desktop.ini
+*.lnk
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
